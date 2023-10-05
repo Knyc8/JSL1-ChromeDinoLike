@@ -1,0 +1,11 @@
+.background {
+    margin-left: auto;
+    margin-right: auto;
+    height: 400px;
+    width: 1200px;
+    background-color: lightgray;
+}
+
+button {
+    align-self: center;
+}
