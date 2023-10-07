@@ -45,10 +45,9 @@ isAlive = setInterval(function () {
     // Compare positions for collision
     if (obstacleLeft < 200 && beaverTop >=200) {
         //collision
-        alert("Game Over! \nScore: " + score.toFixed(2))
+        alert("Game Over! \nScore: " + score.toFixed(2));
         window.location.href = "index.html";
     }
-        
     }, 1500);
 
 }, 10);
