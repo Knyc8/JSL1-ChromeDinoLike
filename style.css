@@ -1,9 +1,15 @@
+* {
+    background-color: darkgray;
+}
+
 .background {
     margin-left: auto;
     margin-right: auto;
     height: 400px;
     width: 1200px;
-    background-color: lightgray;
+    background-size: 1200px 400px;
+    background-image: url(res/bg2.gif);
+    border: 10px solid black;
 }
 
 .controls {
@@ -11,43 +17,66 @@
     text-align: center;
 }
 
-#jumpbtn {
+button {
     font-size: xx-large;
+    background-image: radial-gradient(salmon , red , darkred );
+    border-radius: 10px;
 }
 
 #player {
-    width: 150px;
-    height: 125px;
+    background-color: rgba(0 ,0 , 0, 0);
+    width: 200px;
+    height: 175px;
     background-image: url(res/beaver.png);
-    background-size: 150px 125px;
+    background-size: 200px 175px;
+    
 
     position: relative;
+    top: 225px;
+}
+
+#platform {
+    background-color: rgba(0 ,0 , 0, 0);
+    width: 200px;
+    height: 175px;
+    background-image: url(res/log.png);
+    background-size: 200px 175px;
+    filter: brightness(0.7);
+    -webkit-filter: drop-shadow(12px 7px rgba(0, 0, 0, 1));
+         filter: drop-shadow(12px 12px 7px rgba(0, 0, 0, 1));
+    position: absolute;
     top: 300px;
 }
 
 .jump {
-    animation: jump_anim 0.75s linear;
+    animation: jump_anim 0.6s linear;
 }
 
 @keyframes jump_anim {
     0% {
-        top: 300px;
+        top: 225px;
         background-image: url(res/beaverstand.png);
     }
     33% {
-        top: 200px;
+        top: 125px;
         background-image: url(res/beaverstand.png);
     }
     50% {
-        top: 100px;
+        top: 25px;
         background-image: url(res/beaverstand.png);
     }
+    66% {
+        top: 125px;
+        background-image: url(res/beaverstand.png);   
+    }
     80% {
-        top: 200px;
+        top: 175px;
         background-image: url(res/beaverstand.png);
     }
     100% {
-        top: 300px;
+        top: 225px;
         background-image: url(res/beaver.png);
     }
 }
+
+

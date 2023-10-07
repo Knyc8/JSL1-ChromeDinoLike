@@ -6,16 +6,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Chrome Dinosaur Rip-off Game</title>
+    <title>Beaver Jump</title>
 </head>
 
-<body>
+<body onload="initiate();">
     <div class="background">
+        <div id="platform"></div>
         <div id="player"></div>
         <div id="obstacle"></div>
     </div>
     <div class="controls">
         <button id="jumpbtn">Jump!</button>
+        <button id="duckbtn">Duck!</button>
     </div>
     <script src="scripting.js"></script>
 </body>
