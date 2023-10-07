@@ -11,7 +11,7 @@ function initiate() {
 
     ambience = new Audio("res/river-amb.mp3");
     ambience.loop = true;
-    // ambience.play();
+    ambience.play();
 
     ducked = true;
     
@@ -72,11 +72,15 @@ function duck() {
         player.style.height = "175px";
         player.style.backgroundSize = "200px 175px"
         player.style.top = "225px"
+
+        obstacle.style.top = "110px"
     }
     else {
         player.style.height = "50px";
         player.style.backgroundSize = "200px 50px"
         player.style.top = "315px"
+
+        obstacle.style.top = "235px"
     }
 }
 
