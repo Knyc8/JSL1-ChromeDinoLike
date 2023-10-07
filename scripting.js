@@ -69,17 +69,19 @@ function jump() {
 function duck() {
     if (ducked) {
         player.style.height = "175px";
-        player.style.backgroundSize = "200px 175px"
-        player.style.top = "225px"
+        player.style.backgroundSize = "200px 175px";
+        player.style.top = "225px";
 
-        obstacle.style.top = "110px"
+        obstacle.style.top = "110px";
+        scorecount.style.top = "-270px";
     }
     else {
         player.style.height = "50px";
-        player.style.backgroundSize = "200px 50px"
-        player.style.top = "315px"
+        player.style.backgroundSize = "200px 50px";
+        player.style.top = "315px";
 
-        obstacle.style.top = "235px"
+        obstacle.style.top = "235px";
+        scorecount.style.top = "-145px";
     }
 }
 
