@@ -8,6 +8,8 @@ and (max-device-width: 1000px)
     .scale{
         transform: scale(.65);
         transform-origin: top left;
+        position: fixed; 
+        overflow-y:scroll 
     }
     
     .play {
@@ -20,6 +22,10 @@ and (max-device-width: 1000px)
 
     button {
         touch-action: manipulation;
+    }
+
+    p {
+        display: none;
     }
 }
 
