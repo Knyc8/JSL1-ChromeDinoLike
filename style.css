@@ -2,6 +2,23 @@
     background-color: darkgray;
 }
 
+@media only screen 
+and (max-device-width: 1000px)
+{ 
+    .scale{
+        transform: scale(.65);
+        transform-origin: top left;
+    }
+    
+    .play {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transform: scale(.65);
+        transform-origin: 1 1;
+    }
+}
+
 .play {
     display: flex;
     justify-content: center;
@@ -22,15 +39,6 @@
     color: white;
     background-image: radial-gradient(salmon, red, darkred);
     ;
-}
-
-#icon {
-    position: relative;
-    height: 200px;
-    width: 275px;
-
-    background-image: url("res/beaver.png");
-    background-size: 270px 200px;
 }
 
 /* Game.html */
