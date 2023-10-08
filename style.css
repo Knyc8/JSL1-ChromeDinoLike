@@ -24,7 +24,7 @@ and (max-device-width: 1000px)
         touch-action: manipulation;
     }
 
-    p {
+    .instructions {
         display: none;
     }
 }
