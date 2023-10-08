@@ -17,6 +17,10 @@ and (max-device-width: 1000px)
         transform: scale(.65);
         transform-origin: 1 1;
     }
+
+    button {
+        touch-action: manipulation;
+    }
 }
 
 .play {
